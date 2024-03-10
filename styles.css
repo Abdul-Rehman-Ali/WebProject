@@ -119,7 +119,7 @@ body {
     height: 100px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .signup_heading {
         margin-top: 20px;
     }
@@ -133,4 +133,12 @@ body {
     .login-form {
         margin-bottom: 20px;
     }
+} */
+
+
+@media (max-width: 768px) {
+    .animi_form {
+        width: 100%;
+    }
 }
+
