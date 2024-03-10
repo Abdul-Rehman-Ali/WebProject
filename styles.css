@@ -137,7 +137,7 @@ body {
 
 
 @media (max-width: 768px) {
-    .animi_form {
+    .col-md-6 {
         width: 100%;
     }
 }
