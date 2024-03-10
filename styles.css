@@ -120,10 +120,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container.divider .row {
-        flex-direction: column;
+    .signup_heading {
+        margin-top: 20px;
     }
-    .container.divider .row > div {
-        width: 100%;
+    .divider {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #animation {
+        margin-bottom: 20px;
+    }
+    .login-form {
+        margin-bottom: 20px;
     }
 }

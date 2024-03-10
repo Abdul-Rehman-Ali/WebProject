@@ -10,13 +10,12 @@
 <body>
   
     <header>
-     
-        <nav class=" mynavbar navbar navbar-expand-lg ">
+        <nav class="mynavbar navbar navbar-expand-lg">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="mynavbar navbar-collapse" id="navbarTogglerDemo01">
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand" href="#">Hidden brand</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -50,7 +49,6 @@
     </header>
    
     <div class="container signup_heading">
-
     </div>
 
     <div class="container divider">
@@ -98,32 +96,22 @@
 
     <footer>
         <div class="footer">
-
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script>
-        // Load the animation
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('animation'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '/Asserts/Animation/animation.json' // Path to your JSON animation file
+            path: '/Asserts/Animation/animation.json'
         });
 
-        // Sign up form submission handling
         document.getElementById('signup-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-
-            // Fetch the form data
+            event.preventDefault();
             var formData = new FormData(this);
-
-            // Send the form data to the server or handle it as required
-            // Here, you can add your sign-up logic such as sending data to a server-side script for processing
-
-            // For demonstration purposes, let's log the form data to the console
             for (var pair of formData.entries()) {
                 console.log(pair[0] + ': ' + pair[1]);
             }
@@ -131,6 +119,3 @@
     </script>
 </body>
 </html>
-
-
-
