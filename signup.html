@@ -10,23 +10,7 @@
 </head>
  <!-- Lottie Animation Library -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
- <script>
-     var animation = bodymovin.loadAnimation({
-         container: document.getElementById('animation'),
-         renderer: 'svg',
-         loop: true,
-         autoplay: true,
-         path: '/Asserts/Animation/animation.json'
-     });
 
-     document.getElementById('signup-form').addEventListener('submit', function(event) {
-         event.preventDefault();
-         var formData = new FormData(this);
-         for (var pair of formData.entries()) {
-             console.log(pair[0] + ': ' + pair[1]);
-         }
-     });
- </script>
 <body>
   <!-- Header  -->
     <header>
@@ -114,6 +98,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+      var animation = bodymovin.loadAnimation({
+          container: document.getElementById('animation'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: '/Asserts/Animation/animation.json'
+      });
+ 
+      document.getElementById('signup-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var formData = new FormData(this);
+          for (var pair of formData.entries()) {
+              console.log(pair[0] + ': ' + pair[1]);
+          }
+      });
+  </script>
 
     <footer>
         <div class="footer">
