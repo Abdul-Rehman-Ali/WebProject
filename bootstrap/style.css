@@ -1,0 +1,23 @@
+/* .container-fluide {
+    border: 2px solid salmon;
+} */
+
+.Box1 {
+    background-color: aqua;
+    min-height: 200px;
+}
+
+.Box2 {
+    background-color: rgb(0, 0, 255);
+    min-height: 200px;
+}
+
+.Box3 {
+    background-color: rgb(47, 255, 0);
+    min-height: 200px;
+}
+
+.Box4 {
+    background-color: rgb(203, 107, 29);
+    min-height: 200px;
+}
