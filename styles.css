@@ -132,8 +132,11 @@ body {
     #animation {
         margin-bottom: 20px;
     }
-    .login-form {
+    /* .login-form {
         margin-bottom: 20%;
+    } */
+    .footer {
+        margin-top: 300px;
     }
 }
 
