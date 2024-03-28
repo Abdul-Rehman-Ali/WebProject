@@ -141,4 +141,13 @@ body {
 }
 
 
+.bg-container {
+    height: 100vh;
+    background-image: url("Asserts/images/laptop.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
 
