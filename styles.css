@@ -25,16 +25,6 @@ body {
     /* background-color: #9290C3; */
 }
 
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;

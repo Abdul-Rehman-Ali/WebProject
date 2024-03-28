@@ -10,8 +10,8 @@
     <script src="Asserts/js/bootstrap.min.js"></script>
     <script src="Asserts/js/jquery-3.7.1.min.js">
     </script>
+ <script src="Asserts/js/lottie.min.js"></script>
   </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 <body>
     <!-- Header -->
     <header>
@@ -54,12 +54,12 @@
           </nav>
     </header>
 
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-6">
                 <div id="animation"></div>
             </div>
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-6">
                 <form class="login-form" action="#" method="post">
                     <h2>Login to Your Account</h2>
                     <div class="form-group">
@@ -81,17 +81,17 @@
         </div>
     </div>
 
+   
     
-    <script>
-        // Load the animation
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: '/Asserts/Animation/animation.json' // Path to your JSON animation file
-        });
-    </script>
 </body>
-
+<script>
+  // Load the animation
+  var animation = bodymovin.loadAnimation({
+      container: document.getElementById('animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'Asserts/Animation/animation.json' // Path to your JSON animation file
+  });
+</script>
 </html>
