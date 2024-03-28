@@ -122,9 +122,12 @@ body {
     .signup_heading {
         margin-top: 20px;
     }
-    .divider {
+    /* .divider {
         display: flex;
         flex-direction: column-reverse;
+    } */
+    .container {
+        margin-top: 120px;
     }
     #animation {
         margin-bottom: 20px;
