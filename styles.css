@@ -439,3 +439,22 @@ body {
     justify-content: space-around;
     margin: 20px 10px 0px 10px;
 }
+
+.home_other_courses_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 100px;
+}
+
+
+
+
+/* color: white;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 190px;
+    font-weight: bolder;
+    background-color: #070F2B; */
