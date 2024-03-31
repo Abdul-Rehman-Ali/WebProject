@@ -440,13 +440,19 @@ body {
     margin: 20px 10px 0px 10px;
 }
 
-.home_other_courses_btn {
+.home_course_btn{
     display: flex;
     justify-content: center;
+}
+
+.home_other_courses_btn {
     margin-top: 40px;
     color: white;
+    width: 200px;
     font-size: 20px;
     border-radius: 100px;
+    font-weight: bolder;
+    background-color: #070F2B;
 }
 
 
