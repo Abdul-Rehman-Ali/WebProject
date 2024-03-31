@@ -430,3 +430,12 @@ body {
         margin: 20px 20px 0px 20px;
     }
 }
+
+
+/* Home courses */
+
+.home_courses{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px 0px 10px;
+}
