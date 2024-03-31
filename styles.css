@@ -410,6 +410,8 @@ body {
 .home_course h3 {
     font-size: 40px;
     font-weight: bolder;
+    color: black;
+    /* color: #070F2B; */
 }
 
 @media (max-width: 768px) {
