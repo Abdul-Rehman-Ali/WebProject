@@ -443,6 +443,7 @@ body {
 .home_course_btn{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .home_other_courses_btn {
