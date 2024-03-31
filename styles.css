@@ -456,12 +456,17 @@ body {
     background-color: #070F2B;
 }
 
+.home_other_courses_btn:hover {
+    background-color: orangered;
+    border-color: orangered;
+}
 
 
-
-/* color: white;
-    font-size: 20px;
-    border-radius: 100px;
-    width: 190px;
-    font-weight: bolder;
-    background-color: #070F2B; */
+@media (max-width: 768px) {
+    .home_offer_courses{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
