@@ -373,7 +373,7 @@ body {
         text-align: center;
     }
     .home_benefit_online2 h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .icon_benefits_h3{
         text-align: center;
@@ -385,5 +385,46 @@ body {
     .icon_benefits_p{
         font-size: 15px;
         margin: 20px;
+    }
+}
+
+/* Home Courses */
+.home_course {
+    height: 300px;
+    margin: 50px 50px 0px 50px;
+    padding-top: 80px;
+}
+
+.home_course_p {
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.home_course p {
+    font-size: 20px;
+    margin: 20px 100px 0px 100px;
+}
+
+.home_course h3 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .home_course{
+        margin-top: -30px;
+    }
+    .home_course_p {
+        font-size: 10px;
+    }
+    .home_course h3 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .home_course p {
+        font-size: 15px;
+        margin: 20px 20px 0px 20px;
     }
 }
