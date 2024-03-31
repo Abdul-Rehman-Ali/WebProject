@@ -408,7 +408,7 @@ body {
 }
 
 .home_course h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bolder;
     color: black;
     /* color: #070F2B; */
@@ -459,6 +459,20 @@ body {
 .home_other_courses_btn:hover {
     background-color: orangered;
     border-color: orangered;
+}
+
+.home_course_enroll_btn{
+    background-color: #070F2B;
+    color: white;
+    width: 230px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.home_course_enroll_btn:hover{
+    background-color: orangered;
+    border-color: orangered;
+    font-weight: bolder;
 }
 
 
