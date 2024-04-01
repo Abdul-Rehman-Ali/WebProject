@@ -547,3 +547,18 @@ body {
     color: orangered;
     font-style: italic;
 }
+
+
+.home_blog_read_btn{
+    background-color: #070F2B;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.home_blog_read_btn:hover{
+    background-color: orangered;
+    border-color: orangered;
+    font-weight: bolder;
+}
