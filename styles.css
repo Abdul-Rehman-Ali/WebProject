@@ -146,7 +146,7 @@ body {
 
 .bg-container {
     height: 700px;
-    background-image: url("Asserts/images/HomeBanner.jpg");
+    background-image: url("Asserts/images/homeBanner.webp");
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -515,4 +515,16 @@ body {
         font-size: 30px;
         font-weight: bolder;
     }
+}
+
+
+.testmonial_image_text h5{
+    color: orangered;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.testmonial_image_text p{
+    font-style: italic;
 }
