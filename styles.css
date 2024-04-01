@@ -496,6 +496,7 @@ body {
 
 .home_testimonial_p{
     font-weight: bolder;
+    font-style: italic;
 }
 
 .home_testimonial_heading h3{
@@ -527,4 +528,8 @@ body {
 
 .testmonial_image_text p{
     font-style: italic;
+}
+
+.home_testimonial_heading p {
+    margin: 20px 20% 0px 20%;
 }
