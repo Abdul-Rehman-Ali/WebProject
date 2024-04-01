@@ -531,5 +531,19 @@ body {
 }
 
 .home_testimonial_heading p {
-    margin: 20px 20% 0px 20%;
+    margin: 20px 20% 20px 20%;
+}
+
+.certified_teacher{
+    margin-top: 60px;
+}
+
+.certified_teacher_name h3{
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.certified_teacher_name span{
+    color: orangered;
+    font-style: italic;
 }
