@@ -44,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-bottom: 25px;
 }
 
 #animation {
@@ -573,4 +574,18 @@ body {
 .certified_blog_title h5{
     font-weight: bolder;
     margin-top: 15px;
+}
+
+footer{
+    background-color: #070F2B;
+    color: white;
+}
+
+.footer_link {
+    color: white;
+}
+
+.footer_link:hover{
+    color: orangered;
+    font-size: 18px;
 }
