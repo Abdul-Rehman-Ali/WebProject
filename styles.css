@@ -263,6 +263,10 @@ body {
     .Home_banner_btn:hover {
         background-color: transparent;
     }
+    .home_course p {
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
   }
   
 
@@ -440,7 +444,7 @@ body {
 }
 
 .home_course p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 100px 0px 100px;
 }
 
