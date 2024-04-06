@@ -628,6 +628,9 @@ body {
     .home_three_recent_blog{
         margin-top: -30px;
     }
+    .slide {
+        height: 50%;
+    }
 }
 
 
