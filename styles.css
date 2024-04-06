@@ -625,6 +625,28 @@ body {
     margin-top: 15px;
 }
 
+.home_blog_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_other_blogs_btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 100px;
+    font-weight: bolder;
+    background-color: #070F2B;
+}
+
+.home_other_blogs_btn:hover {
+    background-color: orangered;
+    border-color: orangered;
+}
+
 footer{
     background-color: #070F2B;
     color: white;
