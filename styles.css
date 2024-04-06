@@ -679,3 +679,21 @@ footer{
     color: orangered;
     font-size: 18px;
 }
+
+/* pagination */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination a{
+    margin-top: 20px;
+    color: #070F2B;
+}
+
+.pagination a:hover{
+    margin-top: 20px;
+    color: orangered;
+}
