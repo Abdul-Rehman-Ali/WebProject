@@ -17,6 +17,18 @@ body {
     height: 70px;
 }
 
+.navbar-brand {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navbar-brand span{
+    color: orangered;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .navbar-nav .nav-link {
     color: azure; /* Change text color to white */
 }
@@ -24,6 +36,10 @@ body {
 .navbar-nav .nav-link:hover {
     color: orangered; /* Change text color on hover */
 }
+
+/* .navbar-brand :hover {
+    color: yellow;
+} */
 
 #animation {
     height: 500%;
