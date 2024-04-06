@@ -432,7 +432,7 @@ body {
 /* Home Courses */
 .home_course {
     height: 300px;
-    margin: 50px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     padding-top: 80px;
 }
 
@@ -471,6 +471,17 @@ body {
         margin: 20px 20px 0px 20px;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .home_course h3 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .home_course p {
+        font-size: 20px;
+        margin: 20px 20px 0px 20px;
+    }
+  }
 
 
 /* Home courses */
