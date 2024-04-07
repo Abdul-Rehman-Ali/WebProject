@@ -758,6 +758,7 @@ video {
     grid-template-rows: 1fr auto;
     width: 100%; /* Inherit full width from parent */
     height: 50vh; /* Inherit full height from parent */
+    background-color: rgb(0,0,0,0.4);
   }
   
   .video-container {
@@ -791,8 +792,12 @@ video {
   }
   
   .my_carousel_captions h5 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bolder;
     color: orangered;
     font-style: italic;
+  }
+
+  .my_carousel_captions p {
+    font-size: 20px;
   }
