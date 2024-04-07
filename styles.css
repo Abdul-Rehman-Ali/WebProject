@@ -17,6 +17,10 @@ body {
     height: 70px;
 }
 
+.navbar-toggler {
+    background-color: white;
+}
+
 .navbar-brand {
     color: white;
     font-size: larger;
@@ -713,3 +717,18 @@ footer{
     margin-top: 20px;
     color: orangered;
 }
+
+/* about video  */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: auto; 
+    top: 0;
+}
+
