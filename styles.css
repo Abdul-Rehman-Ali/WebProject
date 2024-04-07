@@ -820,16 +820,19 @@ video {
 
 
   @media (max-width: 768px) {
-    /* .my_carousel_captions h5 {
-        font-size: 10px;
+    .my_carousel_captions h5 {
+        font-size: 20px;
         color: orangered;
-        margin-bottom: 90%;
+        margin-bottom: 0%;
+        margin-right: 60%;
+        display: none;
       }
       .my_carousel_captions {
         position: absolute;
         bottom: 20px;
         right: 30%;
         margin-top: -90%;
+        padding-top: -70px;
       }
       .my_carousel_captions p {
         font-size: 10px;
@@ -840,7 +843,15 @@ video {
         margin-right: 60%;
         font-size: 10px;
         width: 120;
-      } */
+        display: none;
+      }
+      .about_content h2 {
+        font-size: 20px;
+        margin-top: -50%;
+        font-weight: bolder;
+        font-style: italic;
+        text-decoration: underline;
+    }
 }
 
 
@@ -853,6 +864,7 @@ video {
     font-size: 40px;
     font-weight: bolder;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .about_content p {
