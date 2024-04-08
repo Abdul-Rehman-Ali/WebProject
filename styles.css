@@ -86,7 +86,12 @@ body {
 
 .login-form h2 {
     text-align: center;
+    color: #070F2B;
     /* margin-bottom: 10px; */
+}
+
+.login-form span {
+    color: orangered;
 }
 
 .form-group {
