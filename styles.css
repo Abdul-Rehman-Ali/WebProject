@@ -911,3 +911,32 @@ video {
 .privacy_content p{
     font-size: 20px;
 }
+
+
+/* Blog Heading  */
+.blog_heading{
+    height: 150px;
+}
+
+.blog_heading h1{
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #070F2B;
+}
+
+.blog_heading span{
+    color: orangered;
+}
+
+
+.our_blogs {
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .blog_heading h1{
+        padding-top: -50px;
+    }
+}
