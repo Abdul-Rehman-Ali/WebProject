@@ -68,6 +68,11 @@ body {
     margin-bottom: 25px;
 }
 
+.btn-outline{
+    color: white;
+    background-color: orangered;
+}
+
 #animation {
     width: 100%;
     height: auto;
