@@ -950,3 +950,15 @@ video {
         padding-top: -50px;
     }
 }
+
+
+/* terms of use */
+
+.terms_content{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.terms_content b , a{
+    color: orangered;
+}
