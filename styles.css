@@ -577,6 +577,8 @@ body {
    
 }
 
+/* testimonial */
+
 .home_testimonial_heading{
     margin-top: 80px;
     margin-bottom: 40px;
@@ -696,6 +698,8 @@ body {
     background-color: orangered;
     border-color: orangered;
 }
+
+/* Footer  */
 
 footer{
     background-color: #070F2B;
