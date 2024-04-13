@@ -406,6 +406,7 @@ body {
     padding-left: 30px;
     align-content: center;
     padding-top: 40%;
+
 }
 
 .icon_benefits_h3{
@@ -464,6 +465,22 @@ body {
         margin: 20px;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 856px) {
+    .home_benefit_online2 {
+        margin-top: -150px;
+    }
+    .home_three_benefits_div:hover {
+        background-color: #F4F4F4;
+        color: black;
+    }
+    .home_three_benefits_div {
+        height: 130px;
+        margin-bottom: 10px;
+    }
+  }
+
+
 
 /* Home Courses */
 .home_course {
