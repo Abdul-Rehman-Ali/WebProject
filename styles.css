@@ -373,6 +373,11 @@ body {
         height: 150vh;
         width: auto;
     }
+    #Home_banner_text {
+        color: white;
+        font-size: 10px;
+        margin-left: 15px;
+        margin-right: 25%;}
 }
   
 
