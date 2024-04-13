@@ -215,6 +215,18 @@ body {
     }
 }
 
+/* Responsive For Mobile */
+
+@media (max-width: 320px) {
+    .home_benefit_online2 {
+        display: none;
+    }
+    .home_course_para{
+        font-size: 5px;
+        padding-bottom: 20px;
+    }
+}
+
 /*  Banner Image With Content  */
 
 .bg-container {
@@ -556,7 +568,7 @@ body {
         font-weight: bolder;
     }
     .home_course p {
-        font-size: 15px;
+        font-size: 10px;
         margin: 20px 20px 0px 20px;
     }
 }
