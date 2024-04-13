@@ -578,6 +578,11 @@ body {
     margin: 20px 100px 0px 100px;
 }
 
+.home_course_para {
+    font-size: 20px;
+    /* margin: 20px 100px 0px 100px; */
+}
+
 .home_course h3 {
     font-size: 50px;
     font-weight: bolder;
