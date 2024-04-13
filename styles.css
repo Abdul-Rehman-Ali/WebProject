@@ -352,6 +352,28 @@ body {
         padding-bottom: 10px;
     }
   }
+
+
+  /* Responsive For Mobile */
+
+@media (max-width: 320px) {
+    #greet {
+        color: orangered;
+        font-size: 8px;
+        padding-top: 10px;
+        margin-left: 15px;
+    }
+    #Home_banner_h1 {
+        color: white;
+        font-size: 15px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .bg-container {
+        height: 150vh;
+        width: auto;
+    }
+}
   
 
 /* 4 divs bottom of Home Banner */
