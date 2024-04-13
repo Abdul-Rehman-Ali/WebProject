@@ -46,6 +46,42 @@ body {
     color: yellow;
 } */
 
+/* dropdown */
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+  }
+
+  .dropdown a{
+    color: #070F2B;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+
+  .dropdown-menu li  :hover {
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  .dropdown-toggle:hover + .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block;
+  }
+  
+
 #animation {
     height: 500%;
     width: 50%;
