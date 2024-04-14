@@ -632,6 +632,10 @@ body {
     margin: 20px 10px 0px 10px;
 }
 
+.home_courses h5 {
+    font-weight: bold;
+}
+
 .home_course_btn{
     display: flex;
     justify-content: center;
