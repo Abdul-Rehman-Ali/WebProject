@@ -710,8 +710,8 @@ body {
         font-size: 30px;
         font-weight: bolder;
     }
-    .testmonial_image_text h5{
-        color: orangered;
+    .home_testimonial_image h5{
+        color: orange;
         font-size: 1px;
         /* font-weight: bolder; */
         font-style: italic;
@@ -719,6 +719,10 @@ body {
     .testmonial_image_text p{
         font-size: 1px;
     }
+}
+
+@media (max-width: 320px) {
+   
 }
 
 
