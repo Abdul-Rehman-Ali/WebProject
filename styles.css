@@ -957,7 +957,7 @@ video {
         padding-top: -70px;
       }
       .my_carousel_captions p {
-        font-size: 10px;
+        font-size: 13px;
         margin-right: 60%;
         margin-top: -70%;
       }
@@ -969,11 +969,17 @@ video {
       }
       .about_content h2 {
         font-size: 20px;
-        margin-top: -50%;
+        margin-top: -30%;
         font-weight: bolder;
         font-style: italic;
         text-decoration: underline;
     }
+}
+
+@media (max-width: 560px){
+    .my_carousel_captions p {
+        font-size: 10px;
+      }
 }
 
 
