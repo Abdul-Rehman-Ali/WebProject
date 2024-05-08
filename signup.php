@@ -36,54 +36,9 @@ mysqli_query($con, $q);
  <script src="Asserts/js/lottie.min.js"></script>
 <body>
   <!-- Header  -->
-  <header>
-    <!-- Navbar -->
-    <nav class="mynavbar navbar navbar-expand-xl">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mynavbar navbar-collapse" id="navbarTogglerDemo01" style="z-index: 1000;"> <!-- Add style with z-index -->
-                <a class="navbar-brand" href="#"><span>Smart</span> Loop</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link " href="courses.html">Courses</a>
-                    </li> -->
-                    <li class="dropdown nav-item">
-                      <a href="courses.html" class="dropdown-toggle nav-link">Courses</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">App Development</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">AI</a></li>
-                        <li><a href="#">Python</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
-                  </li>
-              </ul>
-              <!-- Search bar and button shown only on larger screens -->
-              <form class="d-none d-xl-flex me-auto mb-2 mb-lg-0">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline" type="submit">Search</button>
-              </form>
-            </div>
-        </div>
-    </nav>
-</header>
+  <?php
+    include("header.php");
+    ?>
 
     <!-- form  -->
    
@@ -154,134 +109,10 @@ mysqli_query($con, $q);
   </script>
 
     <!-- footer -->
-    <footer>
-      <div class=" pt-5 pg-4">
-  
-        <div class="container text-center text-md-left">
-  
-          <div class="row text-center text-md-left">
-  
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque, quae molestiae ipsum natus nemo unde accusamus, temporibus consectetur, ad eum voluptatibus. Id quibusdam atque voluptate fuga sed recusandae sequi!</p>
-            </div>
-  
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Our Courses</h5>
-              <p>
-                <a href="#" class="footer_link" style="text-decoration: none;">WordPress</a>
-              </p>
-  
-              <p>
-                <a href="#" class="footer_link" style="text-decoration: none;">Artificial Intelligence</a>
-              </p>
-  
-              <p>
-                <a href="#" class="footer_link" style="text-decoration: none;">Web Development</a>
-              </p>
-  
-              <p>
-                <a href="#" class="footer_link" style="text-decoration: none;">App Development</a>
-              </p>
-  
-              <p>
-                <a href="#" class="footer_link" style="text-decoration: none;">Python</a>
-              </p>
-            </div>
-  
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
-  
-              <p>
-                <a href="aboutUs.html" class="footer_link" style="text-decoration: none;">About Us</a>
-              </p>
-  
-              <p>
-                <a href="privacy_policy.html" class="footer_link" style="text-decoration: none;">Privacy Plicy</a>
-              </p>
-  
-              <p>
-                <a href="contactUs.html" class="footer_link" style="text-decoration: none;">Contact Us</a>
-              </p>
-  
-              <p>
-                <a href="terms.html" class="footer_link" style="text-decoration: none;">Term Of Use</a>
-              </p>
-
-              <p>
-                <a href="blogs.html" class="footer_link" style="text-decoration: none;">Blogs</a>
-              </p>
-            </div>
-            
-  
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
-              <div class="icon-text mb-2">
-                <i class="fa fa-home mr-3 icon"></i>
-                <span>2nd Floor, Saeed Centre, Sahiwal</span>
-              </div>
-              <div class="icon-text mb-2">
-                <i class="fa fa-envelope mr-3 icon"></i>
-                <span>chabdulrehman1039@gmail.com</span>
-              </div>
-              <div class="icon-text mb-2">
-                <i class="fa fa-phone mr-3 icon"></i>
-                <span>+92 3181646340</span>
-              </div>
-              <div class="icon-text mb-2">
-                <i class="fa fa-phone mr-3 icon"></i>
-                <span>+44 746 221 5175</span>
-              </div>
-            </div>
-  
-          </div>
-  
-        </div>
-        <hr class="mb-4">
-  
-        <div class="row align-items-center">
-          <div class="col-md-7 col-lg-8 px-5">
-            <p>
-              Copyright &#169 2024 All rights reserved by:
-              <a href="#" style="text-decoration: none;">
-                <strong class="text-warning">r Digital Marketing</strong>
-              </a>
-            </p>
-          </div>
-  
-          <div class="col-md-5 col-lg-4">
-            <div class="text-center text-md-right">
-  
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook "></i></a>
-                </li>
-  
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter "></i></a>
-                </li>
-  
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus "></i></a>
-                </li>
-  
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in "></i></a>
-                </li>
-  
-                <li class="list-inline-item">
-                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube "></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-    </footer>
+    <?php
+    include("footer.php");
+    ?>
    
-
-
 
   
 </body>

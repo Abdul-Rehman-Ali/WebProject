@@ -14,9 +14,9 @@
 <body>
     <!-- Header -->
     
-<?php
-include("header.php");
-?>
+    <?php
+    include("header.php");
+    ?>
 
     <!-- Banner Image With Content -->
 
@@ -387,8 +387,11 @@ include("header.php");
 
 
     <!-- footer -->
+    
     <?php
     include("footer.php");
     ?>
+
+
 </body>
 </html>
