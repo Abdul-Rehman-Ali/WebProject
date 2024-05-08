@@ -15,10 +15,10 @@
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <!-- <li class="nav-item">
-                    <a class="nav-link " href="courses.html">Courses</a>
+                    <a class="nav-link " href="courses.php">Courses</a>
                 </li> -->
                 <li class="dropdown nav-item">
-                  <a href="courses.html" class="dropdown-toggle nav-link">Courses</a>
+                  <a href="courses.php" class="dropdown-toggle nav-link">Courses</a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Web Development</a></li>
                     <li><a href="#">App Development</a></li>
@@ -28,16 +28,16 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                    <a class="nav-link" href="aboutUs.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blog</a>
+                    <a class="nav-link" href="blogs.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    <a class="nav-link" href="contactUs.php">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
+                  <a class="nav-link" href="login.php">Login</a>
               </li>
           </ul>
           <!-- Search bar and button shown only on larger screens -->
