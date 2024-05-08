@@ -10,11 +10,9 @@ if (isset($_POST['first_name']))
     $phone = $_POST['phone'];
     $pass = $_POST['password'];
 
-    $sql = "INSERT INTO users (`firstname`, `lastname`, `email`, `phone`, `password`, `dt`) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass', current_timestamp())";
+    $q = "INSERT INTO users (firstname, lastname, email, phone, password, dt) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass',current_timestamp())";
 
-// $q = "INSERT INTO users (firstname, lastname, email, phone, password) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass')";
-
-mysqli_query($con, $q);
+    mysqli_query($con, $q);
 }
 
 ?>
@@ -51,7 +49,7 @@ mysqli_query($con, $q);
                 <div id="animation"></div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <form class="login-form" id="signup-form" action="signup.php" method="post">
+                <form class="login-form" id="signup-form" action="signup.php" method = "post">
                     <h2>  Sign Up for an Account</h2>
                     <div class="form-group">
                         <label for="first-name">First Name:</label>
@@ -78,8 +76,7 @@ mysqli_query($con, $q);
                         <input type="password" id="confirm_password" name="confirm-password" required>
                     </div>
                     <div class="form-group">
-                      <input type="submit" name="submit_btn" value ="Sign Up">
-                        <!-- <button type="submit" name="submit_btn">Sign Up</button> -->
+                    <button type="submit" name="submit_btn">Sign Up</button>
                     </div>
                     <div class="form-group">
                         <p>Already have an account? <a href="login.html">Login</a></p>
@@ -89,7 +86,7 @@ mysqli_query($con, $q);
         </div>
     </div>
 
-    <!-- Animation logic -->
+    <!-- Animation logic
     <script>
       var animation = bodymovin.loadAnimation({
           container: document.getElementById('animation'),
@@ -106,7 +103,7 @@ mysqli_query($con, $q);
               console.log(pair[0] + ': ' + pair[1]);
           }
       });
-  </script>
+  </script> -->
 
     <!-- footer -->
     <?php
@@ -114,17 +111,34 @@ mysqli_query($con, $q);
     ?>
    
 
-  
+   <!-- Animation logic -->
+   <script>
+      var animation = bodymovin.loadAnimation({
+          container: document.getElementById('animation'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'Asserts/Animation/animation.json'
+      });
+ 
+      document.getElementById('signup-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var formData = new FormData(this);
+          for (var pair of formData.entries()) {
+              console.log(pair[0] + ': ' + pair[1]);
+          }
+      });
+  </script>
 </body>
-<script>
+<!-- <script> -->
 
- //  document.getElementById('signup-form').addEventListener('submit', function(event) {
+ <!-- //  document.getElementById('signup-form').addEventListener('submit', function(event) {
  //      event.preventDefault();
  //      var formData = new FormData(this);
  //      for (var pairs of formData.entries()) {
  //          console.log(pair[0] + ': ' + pair[1]);
  //      }
  //  }
- //  );
-</script>
+ //  ); -->
+<!-- </script> -->
 </html>
