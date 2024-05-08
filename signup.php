@@ -121,13 +121,13 @@ if (isset($_POST['first_name']))
           path: 'Asserts/Animation/animation.json'
       });
  
-      document.getElementById('signup-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          var formData = new FormData(this);
-          for (var pair of formData.entries()) {
-              console.log(pair[0] + ': ' + pair[1]);
-          }
-      });
+    //   document.getElementById('signup-form').addEventListener('submit', function(event) {
+    //       event.preventDefault();
+    //       var formData = new FormData(this);
+    //       for (var pair of formData.entries()) {
+    //           console.log(pair[0] + ': ' + pair[1]);
+    //       }
+    //   });
   </script>
 </body>
 <!-- <script> -->

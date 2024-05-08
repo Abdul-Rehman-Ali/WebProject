@@ -10,12 +10,13 @@ if (isset($_POST['first_name']))
     $phone = $_POST['phone'];
     $pass = $_POST['password'];
 
+    $q = "INSERT INTO users (firstname, lastname, email, phone, password, dt) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass',current_timestamp())";
 
-$q = "INSERT INTO users (firstname, lastname, email, phone, password, dt) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass',current_timestamp())";
-
-mysqli_query($con, $q);
+    mysqli_query($con, $q);
 }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
