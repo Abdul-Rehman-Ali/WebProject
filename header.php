@@ -1,3 +1,5 @@
+<?php
+
 <!-- Header -->
 <header>
         <!-- Navbar -->
@@ -38,3 +40,5 @@
             </div>
           </nav>
     </header>
+
+    ?>
