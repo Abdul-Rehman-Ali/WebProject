@@ -10,7 +10,7 @@ if (isset($_POST['first_name']))
     $phone = $_POST['phone'];
     $pass = $_POST['password'];
 
-    $sql = "INSERT INTO `smartloop`.`users` (`firstname`, `lastname`, `email`, `phone`, `password`, `dt`) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass', current_timestamp())";
+    $sql = "INSERT INTO users (`firstname`, `lastname`, `email`, `phone`, `password`, `dt`) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass', current_timestamp())";
 
 // $q = "INSERT INTO users (firstname, lastname, email, phone, password) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass')";
 
@@ -78,7 +78,7 @@ mysqli_query($con, $q);
                         <input type="password" id="confirm_password" name="confirm-password" required>
                     </div>
                     <div class="form-group">
-                      <input type="submit" name="submit_btn" values ="Sign Up">
+                      <input type="submit" name="submit_btn" value ="Sign Up">
                         <!-- <button type="submit" name="submit_btn">Sign Up</button> -->
                     </div>
                     <div class="form-group">
