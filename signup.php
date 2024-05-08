@@ -1,3 +1,25 @@
+<?php
+require("connection.php");
+
+if (isset($_POST['first_name']))
+{
+
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $pass = $_POST['password'];
+
+    $sql = "INSERT INTO `smartloop`.`users` (`firstname`, `lastname`, `email`, `phone`, `password`, `dt`) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass', current_timestamp())";
+
+// $q = "INSERT INTO users (firstname, lastname, email, phone, password) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass')";
+
+mysqli_query($con, $q);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +96,7 @@
                 <div id="animation"></div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <form class="login-form" id="signup-form">
+                <form class="login-form" id="signup-form" action="signup.php" method="post">
                     <h2>  Sign Up for an Account</h2>
                     <div class="form-group">
                         <label for="first-name">First Name:</label>
@@ -98,10 +120,11 @@
                     </div>
                     <div class="form-group">
                         <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" id="confirm-_password" name="confirm-password" required>
+                        <input type="password" id="confirm_password" name="confirm-password" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" name="submit_btn">Sign Up</button>
+                      <input type="submit" name="submit_btn" values ="Sign Up">
+                        <!-- <button type="submit" name="submit_btn">Sign Up</button> -->
                     </div>
                     <div class="form-group">
                         <p>Already have an account? <a href="login.html">Login</a></p>
