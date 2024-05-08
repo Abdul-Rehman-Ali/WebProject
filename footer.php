@@ -36,23 +36,23 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
             <p>
-              <a href="aboutUs.html" class="footer_link" style="text-decoration: none;">About Us</a>
+              <a href="aboutUs.php" class="footer_link" style="text-decoration: none;">About Us</a>
             </p>
 
             <p>
-              <a href="privacy_policy.html" class="footer_link" style="text-decoration: none;">Privacy Policy</a>
+              <a href="privacy_policy.php" class="footer_link" style="text-decoration: none;">Privacy Policy</a>
             </p>
 
             <p>
-              <a href="contactUs.html" class="footer_link" style="text-decoration: none;">Contact Us</a>
+              <a href="contactUs.php" class="footer_link" style="text-decoration: none;">Contact Us</a>
             </p>
 
             <p>
-              <a href="terms.html" class="footer_link" style="text-decoration: none;">Term Of Use</a>
+              <a href="terms.php" class="footer_link" style="text-decoration: none;">Term Of Use</a>
             </p>
 
             <p>
-              <a href="blogs.html" class="footer_link" style="text-decoration: none;">Blogs</a>
+              <a href="blogs.php" class="footer_link" style="text-decoration: none;">Blogs</a>
             </p>
           </div>  
 
