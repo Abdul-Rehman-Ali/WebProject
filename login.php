@@ -4,9 +4,9 @@
     if(isset($_POST['firstname']))
     {
         $uname= $_POST['firstname'];
-        $ulastname= $_POST['lastname'];
+        // $ulastname= $_POST['lastname'];
         $pas = $_POST['password'];
-        $q="select password from users where firstname='$uname'";
+        $q="select password from users where username='$uname'";
         $res= mysqli_query($con,$q);
         if(mysqli_num_rows($res)>0) {
             $arr=mysqli_fetch_assoc($res);
@@ -60,13 +60,13 @@
                 <form class="login-form" action="#" method="post">
                     <h2> Login to Your Account</h2>
                     <div class="form-group">
-                        <label for="username">First Name *:</label>
+                        <label for="username">Username *:</label>
                         <input type="text" id="firstname" name="firstname" required>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="username">Last Name *:</label>
                         <input type="text" id="lastname" name="lastname" required>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label for="password">Password *:</label>
                         <input type="password" id="password" name="password" required>

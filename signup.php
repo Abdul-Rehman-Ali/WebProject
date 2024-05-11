@@ -5,12 +5,12 @@ if (isset($_POST['first_name']))
 {
 
     $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
+    // $last_name = $_POST['last_name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $pass = $_POST['password'];
 
-    $q = "INSERT INTO users (firstname, lastname, email, phone, password, dt) VALUES ('$first_name', '$last_name', '$email', '$phone', '$pass',current_timestamp())";
+    $q = "INSERT INTO users (username, email, phone, password, dt) VALUES ('$first_name', '$email', '$phone', '$pass',current_timestamp())";
 
     mysqli_query($con, $q);
 }
@@ -52,13 +52,13 @@ if (isset($_POST['first_name']))
                 <form class="login-form" id="signup-form" action="signup.php" method = "post">
                     <h2>  Sign Up for an Account</h2>
                     <div class="form-group">
-                        <label for="first-name">First Name:</label>
+                        <label for="first-name">Username:</label>
                         <input type="text" id="first-name" name="first_name" required>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="last-name">Last Name:</label>
                         <input type="text" id="last-name" name="last_name" required>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required>
