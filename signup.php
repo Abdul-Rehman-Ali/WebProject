@@ -79,7 +79,7 @@ if (isset($_POST['first_name']))
                     <button type="submit" name="submit_btn">Sign Up</button>
                     </div>
                     <div class="form-group">
-                        <p>Already have an account? <a href="login.html">Login</a></p>
+                        <p>Already have an account? <a href="login.php">Login</a></p>
                     </div>
                 </form>
             </div>

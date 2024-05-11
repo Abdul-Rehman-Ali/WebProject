@@ -1,3 +1,31 @@
+<?php
+    require('connection.php');
+
+    if(isset($_POST['firstname']))
+    {
+        $uname= $_POST['firstname'];
+        $ulastname= $_POST['lastname'];
+        $pas = $_POST['password'];
+        $q="select password from users where firstname='$uname'";
+        $res= mysqli_query($con,$q);
+        if(mysqli_num_rows($res)>0) {
+            $arr=mysqli_fetch_assoc($res);
+            $db_pass= $arr['password'];
+            if($db_pass==$pas)
+            {
+                header('location:index.php');
+                echo "Login Successfully";
+            }
+            else
+                echo "login failed";
+        }
+        else
+            echo "Invalid user";
+
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +60,12 @@
                 <form class="login-form" action="#" method="post">
                     <h2> Login to Your Account</h2>
                     <div class="form-group">
-                        <label for="username">Username *:</label>
-                        <input type="text" id="username" name="username" required>
+                        <label for="username">First Name *:</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Last Name *:</label>
+                        <input type="text" id="lastname" name="lastname" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password *:</label>
