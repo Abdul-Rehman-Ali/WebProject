@@ -24,7 +24,7 @@
       <p id="greet">Welcome To Smart Loop</p>
       <h1 id="Home_banner_h1">Best E-Learning <br> Online Education</h1>
       <p id="Home_banner_text">SmartLoop offers a seamless online learning experience, empowering students to engage with interactive courses tailored to their needs. With a user-friendly interface and diverse content library, learners can access high-quality educational resources anytime, anywhere. </p>
-      <button type="button" class="btn btn-outline-dark btn-lg Home_banner_btn" onclick="window.location.href='courses.html'">Apply Now</button>
+      <button type="button" class="btn btn-outline-dark btn-lg Home_banner_btn" onclick="window.location.href='courses.php'">Apply Now</button>
     </div>
 
 <!-- 4 Boxed In the bottm of Banner Image -->
@@ -206,7 +206,7 @@
 
     <!-- More Button -->
     <div class="home_course_btn">
-      <button type="button" class="btn btn-outline-dark btn-lg home_other_courses_btn" onclick="window.location.href='courses.html'">Other Courses</button>
+      <button type="button" class="btn btn-outline-dark btn-lg home_other_courses_btn" onclick="window.location.href='courses.php'">Other Courses</button>
     </div>
     <!-- ----- -->
 
@@ -382,7 +382,7 @@
 
      <!-- More Button -->
     <div class="home_blog_btn">
-      <button type="button" class="btn btn-outline-dark btn-lg home_other_blogs_btn" onclick="window.location.href='blogs.html'">Other Blogs</button>
+      <button type="button" class="btn btn-outline-dark btn-lg home_other_blogs_btn" onclick="window.location.href='blogs.php'">Other Blogs</button>
     </div>
 
 

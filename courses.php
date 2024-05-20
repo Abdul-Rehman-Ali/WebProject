@@ -160,8 +160,8 @@
     <!-- Pagination -->
     <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="courses.html">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="courses.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="courses.php">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="courses.php">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
@@ -228,7 +228,7 @@
 
      <!-- More Button -->
     <div class="home_blog_btn">
-      <button type="button" class="btn btn-outline-dark btn-lg home_other_blogs_btn" onclick="window.location.href='blogs.html'">Other Blogs</button>
+      <button type="button" class="btn btn-outline-dark btn-lg home_other_blogs_btn" onclick="window.location.href='blogs.php'">Other Blogs</button>
     </div>
 
 
