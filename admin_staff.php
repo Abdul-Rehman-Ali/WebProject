@@ -24,7 +24,7 @@ $res = mysqli_query($con, $q);
                     <th>User Id</th>
                     <th>Name</th>
                     <th>Position</th>
-                    <th>Descripiton</th>
+                    <th>Description</th>
                     <th>Image</th>
                 </tr>
             </thead>
@@ -38,12 +38,12 @@ $res = mysqli_query($con, $q);
                     <td><?php echo htmlspecialchars($arr['name']); ?></td>
                     <td><?php echo htmlspecialchars($arr['position']); ?></td>
                     <td><?php echo htmlspecialchars($arr['description']); ?></td>
-                    <td><img src="<?php echo htmlspecialchars($arr['image']); ?>" style="height:80px" alt="<?php echo htmlspecialchars($arr['title']); ?>"></td>
+                    <td><img src="<?php echo htmlspecialchars($arr['image']); ?>" style="height:80px" alt="<?php echo htmlspecialchars($arr['name']); ?>"></td>
                 </tr>
                 <?php
                     }
                 } else {
-                    echo "<tr><td colspan='4' class='text-center'>No courses found.</td></tr>";
+                    echo "<tr><td colspan='5' class='text-center'>No staff found.</td></tr>";
                 }
                 ?>
             </tbody>

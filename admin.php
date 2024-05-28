@@ -59,4 +59,5 @@
 
 <?php
   include("admin_courses.php");
+  include("admin_staff.php");
 ?>
