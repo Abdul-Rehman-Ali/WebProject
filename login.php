@@ -13,8 +13,9 @@
             $db_pass= $arr['password'];
             if($db_pass==$pas)
             {
-                header('location:index.php');
-                echo "Login Successfully";
+                session_start();
+                $_SESSION['userid']=true;
+                header('location:courseForm.php');
             }
             else
                 echo "login failed";
