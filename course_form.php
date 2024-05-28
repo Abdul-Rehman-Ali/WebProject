@@ -60,9 +60,6 @@
                     <div class="form-group">
                         <button type="submit">Send Message</button>
                     </div>
-                    <div class="form-group">
-                        <p>Do you want to join SmartLoop? <a href="signup.html">Sign up</a></p>
-                    </div>
                 </form>
             </div>
         </div>
