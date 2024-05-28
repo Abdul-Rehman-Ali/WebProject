@@ -14,10 +14,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link " href="courses.php">Courses</a>
-                </li> -->
-                <li class="dropdown nav-item">
+                </li>
+                <!-- <li class="dropdown nav-item">
                   <a href="courses.php" class="dropdown-toggle nav-link">Courses</a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Web Development</a></li>
@@ -26,7 +26,7 @@
                     <li><a href="#">AI</a></li>
                     <li><a href="#">Python</a></li>
                   </ul>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="aboutUs.php">About Us</a>
                 </li>

@@ -64,14 +64,14 @@ if (isset($_POST['username'])){
                         <label for="course">Select Course *:</label>
                         <select id="course" name="course" required>
                             <option value="" disabled selected>Select Course</option>
-                            <option value="web_development">Web Development</option>
-                            <option value="shopify">Shopify</option>
-                            <option value="wordpress">Wordpress</option>
-                            <option value="app_development">App Development</option>
-                            <option value="seo_course">SEO Course</option>
-                            <option value="python">Python</option>
-                            <option value="ai">Artificial intelligence</option>
-                            <option value="digital_marketing">Digital Marketing</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Shopify">Shopify</option>
+                            <option value="Wordpress">Wordpress</option>
+                            <option value="App Development">App Development</option>
+                            <option value="SEO Course">SEO Course</option>
+                            <option value="Python">Python</option>
+                            <option value="Artificial intelligence">Artificial intelligence</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
                         </select>
                     </div>
                     <div class="form-group">
