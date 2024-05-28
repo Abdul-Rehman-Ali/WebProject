@@ -3,30 +3,23 @@ session_start();
 require("connection.php");
 
 // Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
-}
+// if (!isset($_SESSION['user_id'])) {
+//     header("Location: login.php");
+//     exit;
+// }
 
 // Handle form submission
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['username'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $course = $_POST['course'];
     $message = $_POST['message'];
 
-    $sql = "INSERT INTO studentsEnroll (username, email, selectCourse, information) VALUES (?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssss", $username, $email, $course, $message);
+    $sql = "INSERT INTO studentsEnroll (username, email, selectCourse, information, created_at) VALUES ('$username','$email','$course','$message', current_timestamp())";
+    
+    mysqli_query($con, $sql);
 
-    if ($stmt->execute()) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-    $stmt->close();
-    $conn->close();
+   
 }
 ?>
 
@@ -57,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div id="animation"></div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <form class="login-form" action="" method="post">
+                <form class="login-form" action="courseForm.php" method="post">
                     <h2>Enroll Course <span>SmartLoop</span></h2>
                     <div class="form-group">
                         <label for="username">Username *:</label>

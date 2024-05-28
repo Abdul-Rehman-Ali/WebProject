@@ -15,7 +15,7 @@
             {
                 session_start();
                 $_SESSION['userid']=true;
-                header('location:courseForm.php');
+                header('location:index.php');
             }
             else
                 echo "login failed";
