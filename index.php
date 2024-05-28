@@ -116,6 +116,17 @@
     <!-- ----- -->
 
      <!-- Certified teachers heading-->
+     <div class="home_testimonial_heading text-center">
+      <p class="home_testimonial_p">
+        OUR STAFF
+      </p>
+
+      <div>
+        <h3>Certified Teachers</h3>
+      </div>
+
+      <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+    </div> 
    
      <?php
       include("our_staff.php");

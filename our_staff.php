@@ -1,57 +1,48 @@
-<div class="home_testimonial_heading text-center">
-      <p class="home_testimonial_p">
-        OUR STAFF
-      </p>
+<?php
+require("connection.php");
+?>
 
-      <div>
-        <h3>Certified Teachers</h3>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <link href="Asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Asserts/css/font_awosome_icon.css">
+    <script src="Asserts/js/bootstrap.min.js"></script>
+    <script src="Asserts/js/jquery-3.7.1.min.js"></script>
+    <script src="Asserts/js/lottie.min.js"></script>
+    <script src="Asserts/js/font_awesome.js"></script>
+</head>
+<body>
 
-      <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-    </div> 
-
-    <!-- Certified teachers-->
-
-
+    <!-- Certified teachers -->
     <div class="container-fluid px-6 certified_teacher text-center py-3px">
-      <div class="row">
-        
-        <div class=" col-md-6 col-lg-3 mb-4">
-          <img src="Asserts/images/homeBanner.webp" class="card-img-top" alt="...">
-          <div class="card-body certified_teacher_name">
-            <h3>M. Arhan</h3>
-            <span>Teacher</span>
-            <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-          </div>
+        <div class="row">
+            <?php
+            // Fetch teachers from the database
+            $sql = "SELECT * FROM staff";
+            $result = $con->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo '<div class="col-md-6 col-lg-3 mb-4">';
+                    echo '<img src="'.$row['image'].'" class="card-img-top" alt="...">';
+                    echo '<div class="card-body certified_teacher_name">';
+                    echo '<h3>'.$row['name'].'</h3>';
+                    echo '<span>'.$row['position'].'</span>';
+                    echo '<p class="card-text">'.$row['description'].'</p>';
+                    echo '</div>';
+                    echo '</div>';
+                }
+            } else {
+                echo '<p>No teachers found.</p>';
+            }
+            ?>
         </div>
-
-        <div class=" col-md-6 col-lg-3 mb-4">
-          <img src="Asserts/images/homeBanner.webp" class="card-img-top" alt="...">
-          <div class="card-body certified_teacher_name">
-            <h3>Ch. Arham</h3>
-            <span>Teacher</span>
-            <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-          </div>
-        </div>
-
-        <div class=" col-md-6 col-lg-3 mb-4">
-          <img src="Asserts/images/homeBanner.webp" class="card-img-top" alt="...">
-          <div class="card-body certified_teacher_name">
-            <h3>Ms. Affan</h3>
-            <span>Teacher</span>
-            <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-          </div>
-        </div>
-
-        <div class=" col-md-6 col-lg-3 mb-4">
-          <img src="Asserts/images/homeBanner.webp" class="card-img-top" alt="...">
-          <div class="card-body certified_teacher_name">
-            <h3>Ch. Zohan</h3>
-            <span>Teacher</span>
-            <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-          </div>
-        </div>
-
-      </div>
-
     </div>
+
+
+</html>
