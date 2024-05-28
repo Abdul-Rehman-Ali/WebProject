@@ -16,7 +16,7 @@ $res = mysqli_query($con, $q);
 </head>
 <body>
     <h1 class="text-center py-3">Welcome To SmartLoop</h1>
-    <h2 class="text-center">Our Staff</h2>
+    <h2 class="text-center">Our Enrolled Students</h2>
     <div class="container">
         <table class="table table-bordered">
             <thead>
